@@ -1,4 +1,3 @@
-# dag.py
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 import os
