@@ -15,8 +15,8 @@ This project scrapes live match data from [Kooora](https://kooora.live-kooora.co
 ### Local Setup
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone git@github.com:wael-sudo2/koora-scraper.git
+   cd koora-scraper
    ```
 
 2. Create and activate a virtual environment:
@@ -76,10 +76,10 @@ Saves the extracted match data as a CSV file.
 Main function that runs the scraper, processes match data, and saves it.
 
 ## Scheduled Execution
-The script can be scheduled to run automatically using Apache Airflow or a cron job. For example, to run it every hour using cron:
-
+The script can be scheduled to run automatically using Apache Airflow by cahning svhedule time default set time is one hour:
+- update koora_dag.py `line 22` in order to change scheduling time
 ```bash
-0 * * * * /usr/bin/python3 /path/to/scraper.py
+schedule_interval=0 * * * * 
 ```
 
 ## Notes
