@@ -16,7 +16,7 @@ This project scrapes live match data from [Kooora](https://kooora.live-kooora.co
 1. Clone the repository:
    ```bash
    git clone git@github.com:wael-sudo2/koora-scraper.git
-   cd koora-scraper
+   cd koora-scraper/dags/src
    ```
 
 2. Create and activate a virtual environment:
@@ -32,7 +32,7 @@ This project scrapes live match data from [Kooora](https://kooora.live-kooora.co
 
 4. Run the scraper:
    ```bash
-   python main.py
+   python runner.py
    ```
 
 ### Docker & Airflow Setup
